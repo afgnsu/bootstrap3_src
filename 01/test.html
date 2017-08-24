@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script type="text/javascript">
+
+
+        function add(a, b) {
+            alert(a);
+            alert(b);
+        }
+
+        function sub(a, b) {
+            
+        }
+        var str = "1,周林,http://www.baidu.com";
+        //var items = ["affdasAA", "dafdsafdBB", "dasfdasfdsaCCDD"];
+        var items = str.split(",");
+        add.call(sub, items[0], items[1]);
+
+
+
+
+        //sub.apply(add, ["affdasAA", "dafdsafdBB","dasfdasfdsaCCDD"]);
+
+
+        //function getA(id, name, url) {
+        //    alert("dsafdsaf");
+        //    alert("dsafdsaf");
+        //    alert(id + "      ;          " + name + "             ;             " + url+ "   ;结果");
+        //}
+        //function help() {
+
+        //}
+        //var str = "'1','周林','http://www.baidu.com'";
+        //var items = str.split(",");
+        
+        
+        //help.call(getA, items);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

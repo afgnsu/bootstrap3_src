@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="../bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../bootstrap-3.3.4/css/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+        <script src="../bootstrap-3.3.4/js/html5shiv.min.js"></script>
+        <script src="../bootstrap-3.3.4/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    
+    <br />
+
+    <div class="container">
+        <div class="panel-group" id="panelContainer">
+            <div class="panel panel-default panel-accordion">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#panelContainer" data-target="#collapse1">标题一</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">标题一对应的内容</div>
+                </div>
+            </div>
+            <div class="panel panel-default panel-accordion">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#panelContainer" data-target="#collapse2">
+                    <h4 class="panel-title">
+                        <a>标题二</a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">标题二对应的内容</div>
+                </div>
+            </div>
+            <div class="panel panel-default panel-accordion">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#panelContainer" data-target="#collapse3">
+                    <h4 class="panel-title">
+                        <a>标题三</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">标题三对应的内容</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap-3.3.4/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../bootstrap-3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('#panelContainer').on('show.bs.collapse', function () {
+            alert("show.bs.collapse");
+        }).on('shown.bs.collapse', function () {
+            alert("shown.bs.collapse");
+        }).on('hide.bs.collapse', function () {
+            alert("hide.bs.collapse");
+        }).on('hidden.bs.collapse', function () {
+            alert("hidden.bs.collapse");
+        });
+    </script>
+
+
+</body>
+</html>

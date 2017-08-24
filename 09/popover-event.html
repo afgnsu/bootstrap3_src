@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="../bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../bootstrap-3.3.4/css/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+        <script src="../bootstrap-3.3.4/js/html5shiv.min.js"></script>
+        <script src="../bootstrap-3.3.4/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <br />
+    <br />
+
+    <div class="container">
+        <button id="btnPopover" class="btn btn-primary">
+            right显示
+        </button>
+    </div>
+    <script src="../bootstrap-3.3.4/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../bootstrap-3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $("#btnPopover").popover({
+            placement: "bottom",
+            title: "自定义JS方式",
+            content: "自定义内容"
+        });
+
+        $("#btnPopover").on("show.bs.popover", function () {
+            alert("show.bs.popover");
+        }).on("shown.bs.popover", function () {
+            alert("shown.bs.popover");
+        }).on("hide.bs.popover", function () {
+            alert("hide.bs.popover");
+        }).on("hidden.bs.popover", function () {
+            alert("hidden.bs.popover");
+        }).on("inserted.bs.popover", function () {
+            alert("inserted.bs.popover");
+        });
+    </script>
+
+
+</body>
+</html>
